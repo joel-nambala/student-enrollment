@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="StudentEnrolment.Student.Main" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Student Enrolment Portal"/>
+    <title>Student Enrollment | <%: Page.Title %></title>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link href="../Font%20Awesome/css/all.min.css" rel="stylesheet" />
+    <link href="../Font%20Awesome/css/fontawesome.css" rel="stylesheet" />
+    <!-- Bootstrap CDN -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Select2 Element CDN -->
+    <link href="../App_Components/Select2/css/select2.min.css" rel="stylesheet" />
+    <!-- Local CSS Import -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!-- JS goes here -->
+    <!-- Font Awesome CDN -->
+    <script src="../Font%20Awesome/js/all.min.js"></script>
+    <script src="../Font%20Awesome/js/fontawesome.js"></script>
+    <!-- Bootstrap CDN -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- jQuery CDN -->
+    <script src="../App_Components/jQuery/jQuery.min.js"></script>
+    <!-- Select2 Element CDN -->
+    <script src="../App_Components/Select2/js/select2.full.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            // Initialize Select2 Elements
+            $('.select2').select2();
+        })
+    </script>
+
+    <!-- Local JavaScript Import -->
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,2 +1,3 @@
-# student-enrollment
+# Student Enrollment
+
 Student enrollment portal
